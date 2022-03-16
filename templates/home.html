@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+body {
+      background-image: url("static/images/bg.png");
+      background-repeat: no-repeat;
+       background-size: cover;
+}
+.container{
+     width: 350px;
+     border: 10px solid black;
+     border-style:double;
+     position: absolute;
+     left:750px;
+     bottom:80px;
+     margin: 20px;
+}
+.name{
+
+	font-size: 1.1em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.login{
+
+    border-style: double;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 80px;
+	font-size: 1.8em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+.login:hover{
+   background-color: red
+}
+
+.login:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
+
+.signup{
+    border-style: double;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 80px;
+	font-size: 1.8em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.signup:hover{
+   background-color: red
+}
+
+.signup:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
+
+</style>
+</head>
+<body>
+      <div class="container">
+          <div class="name">
+          <h1>Welcome</h1>
+      </div>
+      <div class="login">
+          <a href="{{url_for('login')}}" style="text-decoration: none;" >LOGIN</a> <br>
+      </div>
+     <div class="signup">
+         <a href="{{url_for('signup')}}" style="text-decoration: none;">SIGN UP</a>
+     </div>
+
+      </div>
+
+
+</body>
+</html>
